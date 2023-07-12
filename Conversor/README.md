@@ -1,18 +1,26 @@
-## Getting Started
+# conversor
+### este programa realiza a conversão de moedas e temperaturas listados a baixo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Moedas**
 
-## Folder Structure
+*   Dólar
+*   Euro
+*   Libras Esterlinas
+*   Peso argentino
+*   Peso Chileno
 
-The workspace contains two folders by default, where:
+**Temperaturas**
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+*   Celsius
+*   Fahrenheit
+*   Kelvin
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    Temperatura | Fórmula
+    :------ | :-------: 
+    Converter de Celsius a Fahrenheit   | (°C * 9/5) + 32
+    Converter de Celsius a Kelvin   |   °C + 273.15
+    Converter de Fahrenheit a Celsius   |   (°F - 32) * 5/9
+    Converter de Fahrenheit a Kelvin    |   (°F - 32) * 5/9 + 273.15
+    Converter de Kelvin a Celsius   |   K - 273.15 
+    Converter de Kelvin a Fahrenheit    |   (K - 273.15) * 9/5 + 32

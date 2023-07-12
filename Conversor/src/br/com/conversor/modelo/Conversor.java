@@ -1,24 +1,28 @@
 package br.com.conversor.modelo;
 
-/**@
+/**
  * converter moedas e temperaturas.
  */
 
 public class Conversor  {
-    /** valor do dollar no momento que foi feito o programa*/
-    public static final double DOLLAR = 4.8; 
-    /** valor do Euro no momento que foi feito o programa*/
-    public static final double EURO = 5.27;
-    /** valor da Libras Estelinas no momento que foi feito o programa*/
-    public static final double LIBRASESTERLINAS = 6.17;
-    /** valor do Peso argentino no momento que foi feito o programa*/
-    public static final double PESOARGENTINO = 0.019;
-    /** valor do Peso Chileno no momento que foi feito o programa*/
-    public static final double PESOCHILENO = 0.0061;
+    
+    public final static Reais converterParaReais = new Reais();
+
+    public final static Dollar converterParaDollar = new Dollar();
+
+    public final static Euro converterParaEuro = new Euro();
+
+    public final static LibrasEsterlinas converterParaLibrasEsterlinas = new LibrasEsterlinas();
+
+    public final static PesoArgentino converterParaPesoArgentino = new PesoArgentino();
+
+    public final static PesoChileno converterParaPesoChileno = new PesoChileno();
+
+
     /** escolha da conversão */
     public static final String[] OPCOES_DE_CONVERSAO = { "Conversor de Moedas", "Conversor de Temperatura" };
-    /** opções para converter moedas*/
-    public static final String[] OPCOES_CONVERTER_MOEDAS = { "Converter de Reais a Dólar", "Converter de Reais a Euro","Converter de Reais a Libras Esterlinas", "Converter de Reais a Peso argentino", " Converter de Reais a Peso Chileno" };
+    /** Escolha qual moeda para conversão*/
+    public static final String[] MOEDA_CONVERTER = { "Reais","Dollar", "Euro","Libras Esterlinas", "Peso argentino", "Peso Chileno" };
     /** opções para converter temperaturas*/
     public static final String[] OPCOES_CONVERTER_TEMPERATURA = {"Converter de Celsius a Fahrenheit", "Converter de Celsius a Kelvin", "Converter de Fahrenheit a Celsius", "Converter de Fahrenheit a Kelvin", "Converter de Kelvin a Fahrenheit", "Converter de Kelvin a Celsius"};
 
@@ -85,5 +89,6 @@ public class Conversor  {
     public static double fahrenheitKelvin(double valor) {
         return ( valor - 32) * 5/9 + 273.15 ;
     }
+
 
 }
